@@ -7,6 +7,14 @@ terraform {
   backend "local" {}
 }
 
+variable "accesskey" {
+  type = string
+  description = "AWS access key"
+}
+variable "secretkey" {
+  type = string
+  description = "AWS secret key"
+}
 variable "moduleec2instance" {
   type = map(object({
     instancetype   = string
