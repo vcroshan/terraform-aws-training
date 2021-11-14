@@ -40,7 +40,7 @@ variable "moduleec2instance" {
     },
     instance2 = {
       instancetype   = "t2.micro"
-      instancecount  = 1
+      instancecount  = 2
       publicip       = "true"
       keyname        = "Jenkins"
       securitygroups = ["sg-083a80f6919f9a2e1"]
